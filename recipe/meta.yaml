@@ -12,24 +12,24 @@ source:
   md5: {{ md5 }}
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win]
 
 requirements:
   build:
+    - {{ compiler('fortran') }}
+    - {{ compiler('c') }}
+  host:
     - python
-    - numpy 1.11.*
+    - numpy
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
-    - gcc
 
   run:
     - python
-    - numpy >=1.11
+    - {{ pin_compatible('numpy') }}
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
-    - libgcc  # [linux]
-    - libgfortran  # [osx]
 
 test:
   imports:
