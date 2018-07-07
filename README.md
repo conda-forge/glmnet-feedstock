@@ -14,14 +14,16 @@ Summary: Python wrapper for glmnet
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/glmnet-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/glmnet-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/glmnet-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/glmnet-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/glmnet-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/glmnet-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/glmnet-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/glmnet-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/glmnet/badges/version.svg)](https://anaconda.org/conda-forge/glmnet)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/glmnet/badges/downloads.svg)](https://anaconda.org/conda-forge/glmnet)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-glmnet-green.svg)](https://anaconda.org/conda-forge/glmnet) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/glmnet.svg)](https://anaconda.org/conda-forge/glmnet) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/glmnet.svg)](https://anaconda.org/conda-forge/glmnet) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/glmnet.svg)](https://anaconda.org/conda-forge/glmnet) |
 
 Installing glmnet
 =================
