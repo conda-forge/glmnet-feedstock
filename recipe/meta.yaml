@@ -38,6 +38,7 @@ test:
 about:
   home: https://github.com/civisanalytics/python-glmnet
   license: GPL-2.0
+  license_family: GPL
   summary: 'Python wrapper for glmnet'
   dev_url: https://github.com/civisanalytics/python-glmnet
   license_file: LICENSE
