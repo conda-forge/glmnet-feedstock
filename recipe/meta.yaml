@@ -1,6 +1,6 @@
 {% set name = "glmnet" %}
-{% set version = "2.0.0" %}
-{% set md5 = "e0465e76af8c22440d086f34d9ad8d5c" %}
+{% set version = "2.1.0" %}
+{% set md5 = "0660fdde3a965b9d6249070904c1affd" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
     - setup.py.patch
 
 build:
-  number: 1002
+  number: 1000
   skip: True  # [win]
 
 requirements:
