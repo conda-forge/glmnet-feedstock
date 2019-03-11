@@ -1,6 +1,6 @@
 {% set name = "glmnet" %}
-{% set version = "2.1.0" %}
-{% set md5 = "0660fdde3a965b9d6249070904c1affd" %}
+{% set version = "2.1.1" %}
+{% set md5 = "6d44a281acafdd37330df9debb22ddb7" %}
 
 package:
   name: {{ name }}
