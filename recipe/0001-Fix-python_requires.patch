@@ -1,0 +1,25 @@
+From 81d699d20f83c3a087ad471546be6b571619cf86 Mon Sep 17 00:00:00 2001
+From: "Uwe L. Korn" <uwe.korn@quantco.com>
+Date: Mon, 12 Jun 2023 11:33:39 +0200
+Subject: [PATCH] Fix python_requires
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 62db7e5..bf731ee 100644
+--- a/setup.py
++++ b/setup.py
+@@ -69,7 +69,7 @@ if __name__ == "__main__":
+               "scipy>=0.14.1",
+               "joblib>=0.14.1",
+           ],
+-          python_requires=">=3.6.*",
++          python_requires=">=3.6",
+           # We need pkg_resources, shipped with setuptools,
+           # for version numbering.
+           setup_requires=["setuptools"],
+-- 
+2.39.2 (Apple Git-143)
+
