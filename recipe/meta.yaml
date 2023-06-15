@@ -1,29 +1,31 @@
 {% set name = "glmnet" %}
 {% set version = "2.2.1" %}
-{% set md5 = "ca6e15cd110d732245af7159aff61878" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  md5: {{ md5 }}
+  sha256: 3222bca2e901b3f60c2dc22df7aeba6bb9c7b6451b44cbbe1b91084b66f14481
   patches:
     - setup.py.patch
+    - 0001-Fix-python_requires.patch
 
 build:
-  number: 4
+  number: 5
   skip: True  # [win]
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ compiler('fortran') }}
   host:
     - python
-    - numpy >=1.9.2
+    - numpy
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
     - joblib >=0.14.1
@@ -53,3 +55,4 @@ extra:
     - salilgupta1
     - colemandsmith
     - jseabold
+    - xhochy
