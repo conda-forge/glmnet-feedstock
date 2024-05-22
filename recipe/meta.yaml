@@ -13,8 +13,8 @@ source:
     - 0001-Fix-python_requires.patch
 
 build:
-  number: 5
-  skip: True  # [win]
+  number: 6
+  skip: True  # [win or py>=312]
 
 requirements:
   build:
@@ -22,6 +22,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('fortran') }}
   host:
     - python
@@ -32,7 +33,6 @@ requirements:
     - pip
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - scikit-learn >=0.18.0
     - scipy >=0.14.1
     - joblib >=0.14.1
